@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Search - MovieHub</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <h1>MovieHub</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="tvseries.html">TV Series</a></li>
+        <li><a href="genre.html">Genre</a></li>
+        <li><a href="howtodownload.html">How to Download</a></li>
+        <li><a href="search.html">Search</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Search Section -->
+  <section id="search-section">
+    <h2>Search for Movies or TV Series</h2>
+    <input type="text" id="search-input" placeholder="Enter movie or TV series name" oninput="performSearch()">
+    <div id="search-results"></div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 MovieHub. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript to Handle Search -->
+  <script src="script.js"></script>
+</body>
+</html>

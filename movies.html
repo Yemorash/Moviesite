@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Movies - MovieHub</title>
+  <link rel="stylesheet" href="style.css"> <!-- Linking the CSS file -->
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <h1>MovieHub</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="movies.html">Movies</a>
+          <ul class="dropdown"> <!-- Submenu for Movies -->
+            <li><a href="hollywood.html">Hollywood</a></li>
+            <li><a href="bollywood.html">Bollywood</a></li>
+            <li><a href="nollywood.html">Nollywood</a></li>
+            <li><a href="asian.html">Asian Movie</a></li>
+            <li><a href="cartoons.html">Cartoons</a></li>
+            <li><a href="upcoming.html">Upcoming</a></li> <!-- Link to Upcoming Page -->
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Movies Section -->
+  <section id="movies">
+    <h2>Movies by Genre</h2>
+    <div class="dropdown-content">
+      <p>Select a genre from the dropdown menu above to view movies.</p>
+    </div>
+  </section>
+
+  <!-- Featured Movies Section -->
+  <section id="featured-movies">
+    <h2>Featured Movies</h2>
+    <div class="movies-grid">
+      <!-- Featured Movies List -->
+      <div class="movie">
+        <img src="hollywood image/Battle over Britain.jpg" alt="Movie 1 Poster">
+        <h3>Battle over Britain</h3>
+        <p>Release Date: 2023</p>
+        <a href="download.html?movie=MovieTitle3" class="download-link">Download</a>
+      </div>
+      <div class="movie">
+        <img src="hollywood image/End of the Rope.jpg" alt="Movie 2 Poster">
+        <h3>End of the Rope</h3>
+        <p>Release Date: 2022</p>
+        <a href="download.html?movie=MovieTitle3" class="download-link">Download</a>
+      </div>
+      <div class="movie">
+        <img src="nollywood image/Breath of life.jpg" alt="Movie 3 Poster">
+        <h3>Breath of life</h3>
+        <p>Release Date: 2024</p>
+        <a href="download.html?movie=MovieTitle3" class="download-link">Download</a>
+      </div>
+      <!-- Add more movies as needed -->
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 MovieHub. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Interaction (Optional) -->
+  <script src="script.js"></script>
+</body>
+
+</html>

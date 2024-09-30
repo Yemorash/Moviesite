@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Download Movie - MovieHub</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+  <script src="script.js"></script> <!-- Link to external JS file for download button behavior -->
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <h1>MovieHub</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="upcoming.html">Upcoming</a></li>
+        <li><a href="tvseries.html">TV Series</a></li>
+        <li><a href="genre.html">Genre</a></li>
+        <li><a href="howtodownload.html">How to Download</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <section id="download-movie">
+    <h2>Download Movie: <span id="movie-title">[Movie Title]</span></h2>
+
+    <!-- Movie Information -->
+    <div class="movie-info">
+      <img src="movie-poster.jpg" alt="Movie Poster" id="movie-poster">
+      <div class="movie-details">
+        <h3>Description</h3>
+        <p id="movie-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et augue nec eros volutpat facilisis at vitae ipsum.</p>
+        <p><strong>Release Date:</strong> <span id="release-date">2023</span></p>
+        <p><strong>Genre:</strong> <span id="movie-genre">Action, Thriller</span></p>
+      </div>
+    </div>
+
+    <!-- Related Movies Section -->
+    <section id="related-movies">
+      <h3>Related Movies</h3>
+      <div class="related-movies-grid">
+        <div class="related-movie">
+          <img src="related1.jpg" alt="Related Movie 1">
+          <h4>Related Movie 1</h4>
+        </div>
+        <div class="related-movie">
+          <img src="related2.jpg" alt="Related Movie 2">
+          <h4>Related Movie 2</h4>
+        </div>
+        <div class="related-movie">
+          <img src="related3.jpg" alt="Related Movie 3">
+          <h4>Related Movie 3</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Google Ads Section -->
+    <section id="ads">
+      <h3>Sponsored Ads</h3>
+      <!-- First Google Ad -->
+      <div class="google-ad" id="ad1">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-123456789"
+             data-ad-slot="987654321"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+      <!-- Second Google Ad -->
+      <div class="google-ad" id="ad2">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-123456789"
+             data-ad-slot="987654321"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    </section>
+
+    <!-- Download Button -->
+    <div class="download-section">
+      <button id="download-button" onclick="handleDownloadClick()">Download Movie</button>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 MovieHub. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

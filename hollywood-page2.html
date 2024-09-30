@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Hollywood Movies - MovieHub</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to your CSS -->
+</head>
+
+<body>
+  <!-- Header Section (same as homepage) -->
+  <header>
+    <div class="logo">
+      <h1>MovieHub</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown-menu">
+          <a href="movies.html">Movies</a>
+          <ul class="dropdown"> <!-- Submenu for Movies -->
+            <li><a href="hollywood.html">Hollywood</a></li>
+            <li><a href="bollywood.html">Bollywood</a></li>
+            <li><a href="nollywood.html">Nollywood</a></li>
+            <li><a href="asian.html">Asian Movies</a></li>
+            <li><a href="cartoons.html">Cartoons</a></li>
+            <li><a href="upcoming.html">Upcoming</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-menu">
+          <a href="tvseries.html">TV Series</a>
+          <ul class="dropdown"> <!-- Submenu for TV Series -->
+            <li><a href="nollywood-series.html">Nollywood Series</a></li>
+            <li><a href="hollywood-series.html">Hollywood Series</a></li>
+            <li><a href="anime.html">Anime</a></li>
+            <li><a href="foreign-series.html">Other Foreign Series</a></li>
+          </ul>
+        </li>
+        <li><a href="18plus.html">18+ Section</a></li>
+        <li><a href="genre.html">Genre</a></li>
+        <li><a href="howtodownload.html">How to Download</a></li>
+
+        <!-- Search Form -->
+        <li>
+          <form id="search-form" onsubmit="return handleSearch()">
+            <input type="text" id="search-input" placeholder="Search movies...">
+            <button type="submit">Search</button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hollywood Movies Section - Page 2 -->
+  <section>
+    <h2>Hollywood Movies</h2>
+    <p>Enjoy more Hollywood movies below:</p>
+  </section>
+
+  <!-- Featured Movies Section - Page 2 -->
+  <section id="featured-movies">
+    
+    <div class="movies-grid">
+      <!-- Movie 7 -->
+
+      <div class="movie">
+        <img src="image/Hollywood movies image/harold-and-the-purple-crayon-hollywood-movie.jpg" alt="Movie 7 Poster">
+        <h3>Harold and the Purple Crayon</h3>
+        <p>Release Date: 2024</p>
+        <a href="download.html?movie=Avatar" class="download-link">Download</a>
+      </div>
+      
+      <div class="movie">
+        <img src="image/Hollywood movies image/Book of Clarence.jpg" alt="Movie 7 Poster">
+        <h3>Book of Clarence</h3>
+        <p>Release Date: 2024</p>
+        <a href="download.html?movie=Avatar" class="download-link">Download</a>
+      </div>
+
+      <!-- Movie 8 -->
+      <div class="movie">
+        <img src="image/Hollywood movies image/Chasing Raine.jpg" alt="Movie 8 Poster">
+        <h3>Chasing Raine</h3>
+        <p>Release Date: 2024</p>
+        <a href="download.html?movie=BlackPanther2" class="download-link">Download</a>
+      </div>
+
+      <!-- Movie 9 -->
+      <div class="movie">
+        <img src="image/Hollywood movies image/ChiefOfStation_Poster_2764x4096.jpg" alt="Movie 9 Poster">
+        <h3>Chief of Station</h3>
+        <p>Release Date: 2024</p>
+        <a href="download.html?movie=TopGun" class="download-link">Download</a>
+      </div>
+
+      <!-- Movie 10 -->
+      <div class="movie">
+        <img src="image/Hollywood movies image/Civil War.jpg" alt="Movie 10 Poster">
+        <h3>Civil War</h3>
+        <p>Release Date: 2024</p>
+        <a href="download.html?movie=Matrix" class="download-link">Download</a>
+      </div>
+
+      <!-- Movie 11 -->
+      <div class="movie">
+        <img src="image/Hollywood movies image/Darkness of Man.jpeg" alt="Movie 11 Poster">
+        <h3>Darkness of Man</h3>
+        <p>Release Date: 2024</p>
+        <a href="download.html?movie=WonderWoman" class="download-link">Download</a>
+      </div>
+
+      <div class="movie">
+        <img src="image/Hollywood movies image/Gozila Vs Kong.jpg" alt="Movie 18 Poster">
+        <h3>Gozila Vs Kong</h3>
+        <p>Release Date: 2024</p>
+        <a href="download.html?movie=Dune" class="download-link">Download</a>
+      </div>
+
+      <div class="movie">
+        <img src="image/Hollywood movies image/Seize Them.png" alt="Movie 18 Poster">
+        <h3>Seize Them</h3>
+        <p>Release Date: 2024</p>
+        <a href="download.html?movie=Dune" class="download-link">Download</a>
+      </div>
+
+      <div class="movie">
+        <img src="image/Hollywood movies image/Last Stop Yuna County.jpg" alt="Movie 18 Poster">
+        <h3>Last Stop Yuna County</h3>
+        <p>Release Date: 2024</p>
+        <a href="download.html?movie=Dune" class="download-link">Download</a>
+      </div>
+
+      <div class="movie">
+        <img src="image/Hollywood movies image/Sting.png" alt="Movie 18 Poster">
+        <h3>Sting</h3>
+        <p>Release Date: 2024</p>
+        <a href="download.html?movie=Dune" class="download-link">Download</a>
+      </div>
+
+      <div class="movie">
+        <img src="image/Hollywood movies image/Tales of Babylon.jpg" alt="Movie 18 Poster">
+        <h3>Tales of Babylon</h3>
+        <p>Release Date: 2024</p>
+        <a href="download.html?movie=Dune" class="download-link">Download</a>
+      </div>
+
+      <div class="movie">
+        <img src="image/Hollywood movies image/Monuments Men.jpg" alt="Movie 18 Poster">
+        <h3>The Monuments Men</h3>
+        <p>Release Date: 2014</p>
+        <a href="download.html?movie=Dune" class="download-link">Download</a>
+      </div>
+
+      <div class="movie">
+        <img src="image/Hollywood movies image/Bosco.jpg" alt="Movie 18 Poster">
+        <h3>Bosco</h3>
+        <p>Release Date: 2024</p>
+        <a href="download.html?movie=Dune" class="download-link">Download</a>
+      </div>
+
+      <div class="movie">
+        <img src="image/Hollywood movies image/Jade.jpg" alt="Movie 18 Poster">
+        <h3>Jade</h3>
+        <p>Release Date: 2024</p>
+        <a href="download.html?movie=Dune" class="download-link">Download</a>
+      </div>
+
+      <div class="movie">
+        <img src="image/Hollywood movies image/Late Night Devil.jpg" alt="Movie 18 Poster">
+        <h3>Late Night With The Devil</h3>
+        <p>Release Date: 2024</p>
+        <a href="download.html?movie=Dune" class="download-link">Download</a>
+      </div>
+
+
+      
+    </div>
+  </section>
+
+  <!-- Pagination Section -->
+  <section id="pagination">
+    <ul class="pagination-list">
+      <li><a href="hollywood.html">1</a></li> <!-- Page 1: Hollywood -->
+      <li><a href="hollywood-page2.html" class="active">2</a></li> <!-- Active Page 2 -->
+      <li><a href="hollywood-page3.html">3</a></li> <!-- Page 3 -->
+    </ul>
+  </section>
+
+
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 MovieHub. All rights reserved.</p>
+  </footer>
+</body>
+</html>

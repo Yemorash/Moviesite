@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>18+ Section - MovieHub</title>
+  <link rel="stylesheet" href="style.css"> <!-- Linking to the external CSS file -->
+</head>
+<body onload="ageVerification()">
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <h1>MovieHub</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="tvseries.html">TV Series</a></li>
+        <li><a href="18plus.html">18+ Section</a></li> <!-- Link to the 18+ Section -->
+        <li><a href="genre.html">Genre</a></li>
+        <li><a href="howtodownload.html">How to Download</a></li>
+      
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Search Box -->
+  <section id="search-section">
+    <h2>Search 18+ Content</h2>
+    <input type="text" id="search-input" placeholder="Search 18+ movies or TV shows" oninput="searchMovies()">
+    <div id="search-results"></div>
+  </section>
+
+  <!-- 18+ Section -->
+  <section id="adult-content" style="display: none;">
+    <h2>18+ Movies & TV Shows</h2>
+    <div class="warning">
+      <p><strong>Warning:</strong> This section contains content that is not suitable for viewers under 18 years old. Viewer discretion is advised.</p>
+    </div>
+    <div class="movies-grid" id="movies-grid">
+      <div class="movie">
+        <img src="18plus1.jpg" alt="18+ Movie 1 Poster">
+        <h3>Movie Title 1</h3>
+        <p>Release Date: 2023</p>
+      </div>
+      <div class="movie">
+        <img src="18plus2.jpg" alt="18+ Movie 2 Poster">
+        <h3>Movie Title 2</h3>
+        <p>Release Date: 2022</p>
+      </div>
+      <div class="movie">
+        <img src="18plus3.jpg" alt="18+ Movie 3 Poster">
+        <h3>Movie Title 3</h3>
+        <p>Release Date: 2024</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 MovieHub. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Age Verification Prompt
+    function ageVerification() {
+      const ageConfirmed = confirm("You must be 18 years or older to access this section. Are you over 18?");
+      if (ageConfirmed) {
+        document.getElementById('adult-content').style.display = 'block'; // Show the 18+ content
+      } else {
+        alert("You cannot access this section if you are under 18.");
+        window.location.href = 'index.html'; // Redirect to home page
+      }
+    }
+
+    // Array of 18+ Movies for Search
+    const movies = [
+      { title: "Movie Title 1", year: "2023" },
+      { title: "Movie Title 2", year: "2022" },
+      { title: "Movie Title 3", year: "2024" },
+    ];
+
+    // Search Functionality
+    function searchMovies() {
+      const query = document.getElementById("search-input").value.toLowerCase();
+      const resultsContainer = document.getElementById("search-results");
+      const moviesGrid = document.getElementById("movies-grid");
+
+      // Clear previous results
+      resultsContainer.innerHTML = '';
+      moviesGrid.style.display = 'none'; // Hide grid while searching
+
+      if (query === '') {
+        resultsContainer.innerHTML = '<p>Please enter a search term.</p>';
+        moviesGrid.style.display = 'block'; // Show grid if search is cleared
+        return;
+      }
+
+      // Filter through movies to match the query
+      const filteredMovies = movies.filter(movie => movie.title.toLowerCase().includes(query));
+
+      if (filteredMovies.length === 0) {
+        resultsContainer.innerHTML = '<p>No results found.</p>';
+        return;
+      }
+
+      // Display filtered results
+      filteredMovies.forEach(movie => {
+        const resultItem = document.createElement("div");
+        resultItem.classList.add("result-item");
+        resultItem.innerHTML = `<strong>${movie.title}</strong> - ${movie.year}`;
+        resultsContainer.appendChild(resultItem);
+      });
+    }
+  </script>
+</body>
+</html>

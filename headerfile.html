@@ -1,0 +1,42 @@
+<!-- header.html -->
+<header>
+  <div class="logo">
+    <h1>MovieHub</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown-menu">
+        <a href="movies.html">Movies</a>
+        <ul class="dropdown"> <!-- Submenu for Movies -->
+          <li><a href="hollywood.html">Hollywood</a></li>
+          <li><a href="bollywood.html">Bollywood</a></li>
+          <li><a href="nollywood.html">Nollywood</a></li>
+          <li><a href="asian.html">Asian Movies</a></li>
+          <li><a href="cartoons.html">Cartoons</a></li>
+          <li><a href="upcoming.html">Upcoming</a></li>
+        </ul>
+      </li>
+      <li class="dropdown-menu">
+        <a href="tvseries.html">TV Series</a>
+        <ul class="dropdown"> <!-- Submenu for TV Series -->
+          <li><a href="nollywood-series.html">Nollywood Series</a></li>
+          <li><a href="hollywood-series.html">Hollywood Series</a></li>
+          <li><a href="anime.html">Anime</a></li>
+          <li><a href="foreign-series.html">Other Foreign Series</a></li>
+        </ul>
+      </li>
+      <li><a href="18plus.html">18+ Section</a></li>
+      <li><a href="genre.html">Genre</a></li>
+      <li><a href="howtodownload.html">How to Download</a></li>
+
+      <!-- Search Form -->
+      <li>
+        <form id="search-form" onsubmit="return handleSearch()">
+          <input type="text" id="search-input" placeholder="Search movies...">
+          <button type="submit">Search</button>
+        </form>
+      </li>
+    </ul>
+  </nav>
+</header>

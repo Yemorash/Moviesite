@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Hollywood Movies - MovieHub</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to your CSS -->
+</head>
+
+<body>
+  <!-- Header Section (same as homepage) -->
+  <header>
+    <div class="logo">
+      <h1>MovieHub</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown-menu">
+          <a href="movies.html">Movies</a>
+          <ul class="dropdown"> <!-- Submenu for Movies -->
+            <li><a href="hollywood.html">Hollywood</a></li>
+            <li><a href="bollywood.html">Bollywood</a></li>
+            <li><a href="nollywood.html">Nollywood</a></li>
+            <li><a href="asian.html">Asian Movies</a></li>
+            <li><a href="cartoons.html">Cartoons</a></li>
+            <li><a href="upcoming.html">Upcoming</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-menu">
+          <a href="tvseries.html">TV Series</a>
+          <ul class="dropdown"> <!-- Submenu for TV Series -->
+            <li><a href="nollywood-series.html">Nollywood Series</a></li>
+            <li><a href="hollywood-series.html">Hollywood Series</a></li>
+            <li><a href="anime.html">Anime</a></li>
+            <li><a href="foreign-series.html">Other Foreign Series</a></li>
+          </ul>
+        </li>
+        <li><a href="18plus.html">18+ Section</a></li>
+        <li><a href="genre.html">Genre</a></li>
+        <li><a href="howtodownload.html">How to Download</a></li>
+
+        <!-- Search Form -->
+        <li>
+          <form id="search-form" onsubmit="return handleSearch()">
+            <input type="text" id="search-input" placeholder="Search movies...">
+            <button type="submit">Search</button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="tv-series">
+    <h2>Anime Series</h2>
+    <div class="series-grid">
+      <!-- Anime Series Items -->
+      <div class="series">
+        <img src="anime1.jpg" alt="Anime Series 1 Poster">
+        <h3>Anime Title 1</h3>
+        <p>Release Date: 2022</p>
+        <a href="download.html?movie=AnimeTitle1" class="download-link">Download</a>
+      </div>
+      <div class="series">
+        <img src="anime2.jpg" alt="Anime Series 2 Poster">
+        <h3>Anime Title 2</h3>
+        <p>Release Date: 2023</p>
+        <a href="download.html?movie=AnimeTitle2" class="download-link">Download</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 MovieHub. All rights reserved.</p>
+  </footer>
+</body>
+</html>
